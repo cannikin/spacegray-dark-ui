@@ -1,7 +1,7 @@
 {
   "name": "spacegray-dark-ui",
   "theme": "ui",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Port of the Spacegray Sublime Text theme http://kkga.github.io/spacegray to Atom",
   "license": "MIT",
   "repository": "https://github.com/cannikin/spacegray-dark-ui",
