@@ -6,22 +6,15 @@
   background-color: @input-background-color;
   border-radius: @component-border-radius;
   padding-left: @component-padding/2;
-
+  .placeholder-text {
+    color: @text-color-subtle;
+  }
   .cursor { border-color: #fff; }
   .selection .region { background-color: lighten(@input-background-color, 10%); }
 }
 
 .editor {
-  background-color: @editor-background-color;
-}
-.editor .gutter {
-  background-color: @editor-background-color;
-}
-.editor.mini {
-  background-color: @editor-background-color;
-  .placeholder-text {
-    color: @text-color-subtle;
-  }
+  background-color: @app-background-color;
 }
 
 .editor.editor-colors.mini.is-focused {
