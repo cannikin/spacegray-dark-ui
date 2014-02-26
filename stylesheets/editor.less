@@ -4,9 +4,6 @@
 .editor.mini {
   color: @text-color-highlight;
   background-color: @input-background-color;
-  border: 1px solid @input-border-color;
-  box-shadow:
-    inset 0 1px 1px rgba(0, 0, 0, .075);
   border-radius: @component-border-radius;
   padding-left: @component-padding/2;
 
@@ -14,14 +11,23 @@
   .selection .region { background-color: lighten(@input-background-color, 10%); }
 }
 
-.editor.editor-colors.mini.is-focused {
-  background-color: lighten(@input-background-color, 5%);
-  .selection .region { background-color: desaturate(@background-color-info, 50%); }
+.editor {
+  background-color: @editor-background-color;
+}
+.editor .gutter {
+  background-color: @editor-background-color;
+}
+.editor.mini {
+  background-color: @editor-background-color;
+  .placeholder-text {
+    color: @text-color-subtle;
+  }
 }
 
-// FIXME: these should go in syntax themes?
-.editor .gutter.drop-shadow {
-  -webkit-box-shadow: -2px 0 10px 2px #222;
+.editor.editor-colors.mini.is-focused {
+  background-color: darken(@editor-background-color, 3%);
+  .selection .region { background-color: desaturate(@background-color-info, 50%); }
+  transition: background-color 0.1s
 }
 
 @-webkit-keyframes highlight {

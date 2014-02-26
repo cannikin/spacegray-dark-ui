@@ -1,11 +1,11 @@
 {
-  "name": "atom-dark-ui",
+  "name": "spacegray-dark-ui",
   "theme": "ui",
-  "version": "0.23.0",
-  "description": "Default dark theme for interface components",
+  "version": "0.0.0",
+  "description": "Port of the Spacegray Sublime Text theme http://kkga.github.io/spacegray to Atom",
   "license": "MIT",
-  "repository": "https://github.com/atom/atom-dark-ui",
+  "repository": "https://github.com/cannikin/spacegray-dark-ui",
   "engines": {
-    "atom": ">0.40.0"
+    "atom": ">0.50.0"
   }
 }

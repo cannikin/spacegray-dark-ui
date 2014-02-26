@@ -1,14 +1,14 @@
 // Colors
 
-@text-color: #aaa;
-@text-color-subtle: #555;
-@text-color-highlight: #fff;
-@text-color-selected: @text-color-highlight;
+@text-color: rgb(101, 115, 127);
+@text-color-subtle: #484F5A;
+@text-color-highlight: rgb(192,197,206);
+@text-color-selected: rgb(223, 225, 232);
 
-@text-color-info: #5293d8;
-@text-color-success: #26c26a;
-@text-color-warning: #ff982d;
-@text-color-error: #c00;
+@text-color-info: #5786B8;
+@text-color-success: #68A281;
+@text-color-warning: #AA8A69;
+@text-color-error: #9B4444;
 
 @text-color-ignored: @text-color-subtle;
 @text-color-added: @text-color-success;
@@ -21,9 +21,12 @@
 @background-color-warning: #ffaa2c;
 @background-color-error: #c00;
 @background-color-highlight: rgba(255, 255, 255, 0.07);
-@background-color-selected: #4182C4;
+@background-color-selected: #343D46;
 
-@app-background-color: #333;
+@editor-background-color: #2B303B;
+@tree-background-color: #232830;
+
+@app-background-color: #232830;
 
 @base-background-color: lighten(@tool-panel-background-color, 5%);
 @base-border-color: rgba(0, 0, 0, 0.5);
@@ -31,11 +34,11 @@
 @pane-item-background-color: @base-background-color;
 @pane-item-border-color: rgba(0, 0, 0, 0.5);
 
-@input-background-color: #212224;
+@input-background-color: #1C1F26;
 @input-border-color: @base-border-color;
 
-@tool-panel-background-color: #1d1f21;
-@tool-panel-border-color: @base-border-color;
+@tool-panel-background-color: #1C1F26;
+@tool-panel-border-color: transparent;
 
 @inset-panel-background-color: #161719;
 @inset-panel-border-color: @base-border-color;
@@ -46,16 +49,16 @@
 @overlay-background-color: #202123;
 @overlay-border-color: @background-color-highlight;
 
-@button-background-color: #43484d;
-@button-background-color-hover: lighten(@button-background-color, 5%);
-@button-background-color-selected: #5c6064;
-@button-border-color: @base-border-color;
+@button-background-color: #1C1F26;
+@button-background-color-hover: #1C1F26;
+@button-background-color-selected: #1C1F26;
+@button-border-color: transparent;
 
-@tab-bar-background-color: #222;
-@tab-bar-border-color: darken(@tab-background-color-active, 10%);
-@tab-background-color: #333;
-@tab-background-color-active: #222;
-@tab-border-color: #484848;
+@tab-bar-background-color: rgb(28, 31, 38);
+@tab-bar-border-color: transparent;
+@tab-background-color: #1C1F26;
+@tab-background-color-active: rgb(43, 48, 59);
+@tab-border-color: transparent;
 
 @tree-view-background-color: @tool-panel-background-color;
 @tree-view-border-color: @tool-panel-border-color;
@@ -69,7 +72,7 @@
 
 // Sizes
 
-@font-size: 13px;
+@font-size: 11px;
 
 @disclosure-arrow-size: 12px;
 
