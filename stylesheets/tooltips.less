@@ -1,14 +1,14 @@
 @import "ui-variables";
 
 .tooltip {
-  @tip-background-color: #fff;
-  @tip-text-color: #333;
+  @tip-background-color: darken(@tool-panel-background-color, 10%);
+  @tip-text-color: @text-color;
   white-space: nowrap;
 
   .keystroke {
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 13px;
-    color: #777;
+    font-size: 12px;
+    color: lighten(@tip-text-color, 10%);
     padding-left: 2px;
   }
 
