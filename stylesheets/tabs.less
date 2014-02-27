@@ -42,18 +42,30 @@
     }
 
     .close-icon {
-      z-index: 3;
-      line-height: @tab-height;
+      display: none;
+
+      &:hover {
+        color: @text-color-error !important;
+
+      }
     }
+
     &.modified:not(:hover) .close-icon {
       top: @tab-height/2 - @modified-icon-width/2 + 1px;
       right: 14px;
       width: @modified-icon-width;
       height: @modified-icon-width;
+      border-color: @text-color-info;
     }
 
     &:first-child {
       margin-left: 20px;
+    }
+
+    &:hover {
+      .close-icon {
+        display: block;
+      }
     }
   }
 
@@ -69,6 +81,7 @@
 
     .close-icon {
       line-height: @tab-height - 1px;
+      display: block;
     }
 
     &, &:before {
