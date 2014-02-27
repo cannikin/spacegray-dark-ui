@@ -7,13 +7,11 @@
 
 
   &:hover {
-    color: @text-color-highlight;
-
+    color: @text-color;
   }
   &.selected,
   &.selected:hover {
     color: @text-color-highlight;
-
     &:hover {
 
     }
@@ -29,6 +27,10 @@
 
 .btn {
   .btn-background(@button-background-color, @button-background-color-hover, @button-background-color-selected, @text-color);
+  &:active {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+  }
 }
 
 .btn.btn-primary {
