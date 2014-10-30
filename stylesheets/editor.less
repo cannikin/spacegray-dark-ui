@@ -28,3 +28,29 @@
   -webkit-animation-duration: 1s;
   -webkit-animation-iteration-count: 1;
 }
+
+.horizontal-scrollbar {
+  &::-webkit-scrollbar {
+    height:8px;
+  }
+  &::-webkit-scrollbar-track{
+    background-color: @editor-scrollbar-background-color;
+  }
+  &::-webkit-scrollbar-thumb{
+    background: @editor-scrollbar-thumb-background-color;
+    height: 8px;
+  }
+}
+
+.vertical-scrollbar {
+  &::-webkit-scrollbar {
+    width:8px;
+  }
+  &::-webkit-scrollbar-track{
+    background-color: @editor-scrollbar-background-color;
+  }
+  &::-webkit-scrollbar-thumb{
+    background: @editor-scrollbar-thumb-background-color;
+    width: 8px;
+  }
+}
