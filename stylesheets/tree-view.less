@@ -17,3 +17,16 @@
     }
   }
 }
+
+.tree-view-scroller {
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  &::-webkit-scrollbar-track{
+    background-color: @tree-view-scrollbar-background-color;
+  }
+  &::-webkit-scrollbar-thumb{
+    background: @tree-view-scrollbar-thumb-background-color;
+    width: 8px;
+  }
+}
