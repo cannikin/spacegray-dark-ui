@@ -19,16 +19,19 @@
 }
 
 .tree-view-resizer, atom-text-editor {
-  ::-webkit-scrollbar {
+  /deep/ ::-webkit-scrollbar {
     width: 1em;
     height: 1em;
   }
-
-  ::-webkit-scrollbar-track {
+  /deep/ ::-webkit-scrollbar-track {
     background-color: #2B303B;
   }
 
-  ::-webkit-scrollbar-thumb {
+  /deep/ ::-webkit-scrollbar-thumb {
     background-color: #232830;
+  }
+
+  /deep/ ::-webkit-scrollbar-corner {
+    background-color: #1C1F25; 
   }
 }
