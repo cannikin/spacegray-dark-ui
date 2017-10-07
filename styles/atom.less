@@ -7,3 +7,26 @@
 .atom-workspace {
   background-color: @app-background-color;
 }
+
+.scrollbars-visible-always {
+  ::-webkit-scrollbar,
+  /deep/ ::-webkit-scrollbar {
+    width: 1em;
+    height: 1em;
+  }
+
+  ::-webkit-scrollbar-corner,
+  /deep/ ::-webkit-scrollbar-corner {
+    background-color: #1C1F25;
+  }
+
+  ::-webkit-scrollbar-track,
+  /deep/ ::-webkit-scrollbar-track {
+    background-color: #2B303B;
+  }
+
+  ::-webkit-scrollbar-thumb,
+  /deep/ ::-webkit-scrollbar-thumb {
+    background-color: #232830;
+  }
+}
